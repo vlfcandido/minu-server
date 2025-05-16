@@ -1,0 +1,23 @@
+{
+  "name": "api-minu-server-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "common",
+    "fetcher",
+    "api"
+  ],
+  "scripts": {
+    "rebuild": "docker compose up -d --build --force-recreate",
+    "dev": "docker compose up --build",
+    "start": "docker compose up -d",
+    "stop": "docker compose down",
+    "logs:db": "docker compose logs -f db",
+    "logs:fetcher": "docker compose logs -f fetcher",
+    "logs:api": "docker compose logs -f api"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}

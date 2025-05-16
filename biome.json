@@ -1,0 +1,7 @@
+{
+  "formatter": {
+    "rules": {
+      "max_line_length": 120
+    }
+  }
+}
